@@ -34,9 +34,10 @@ theme: academic
 plugins:
   - jekyll-feed
 
-group :jekyll_plugins do
-  gem "jekyll-data"
-end
+# Copied to Gemfile and to config -- potentially wrong here
+#group :jekyll_plugins do
+#  gem "jekyll-data"
+#end
 
 # Exclude from processing.
 # The following items will not be processed, by default.
