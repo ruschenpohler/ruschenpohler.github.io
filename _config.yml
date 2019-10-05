@@ -20,10 +20,7 @@
 
 title: Julius Ruschenpohler
 email: ruschenpohler@berkeley.edu
-description: Postdoc at UC Berkeley, affiliated with the Center for Effective Global Action (CEGA).
-Ph.D. in Economics from Tilburg University.
-Working at the intersection of development economics and behavioral and experimental economics.
-Interested in causal inference and machine learning.
+description: Postdoc at UC Berkeley, affiliated with the Center for Effective Global Action (CEGA). Ph.D. in Economics from Tilburg University. Working at the intersection of development economics and behavioral and experimental economics. Interested in causal inference and machine learning.
 baseurl: "/about" # the subpath of your site, e.g. /blog
 url: "https://ruschenpohler.github.io"
 twitter_username: ruschenpohler
