@@ -1,0 +1,82 @@
+---
+---
+
+### Publications
+
+
+[**Worries of the Poor: The Impact of Financial Burden on the Risk Attitudes of Micro-entrepreneurs**](https://www.sciencedirect.com/science/article/pii/S016748701830727X)
+
+with Patricio S. Dalton and Nhung Nguyen
+
+Forthcoming in the *Journal of Economic Psychology*
+
+[Replication file and data]()
+
+We randomly expose the owners of small retail businesses in Vietnam to scenarios that trigger financial worries and study the effect of this intervention on risk attitudes. Using an incentive-compatible investment game, we ﬁnd that entrepreneurs exposed to financial worries are more likely to seek ﬁnancial risks than those assigned to a placebo treatment. In line with psychological theory on the effect of affective states and stress on risk-taking behavior, this effect is stronger for owners of shops which are smaller and less exposed to large income shocks in their everyday business. We further show that the effect of financial worries on risk attitudes is not explained by changes in the cognitive functioning of the treated. The findings point to the crucial role of financial worries in economic decision-making under poverty.
+
+<sup> **Keywords**: Poverty; Risk Aversion; Financial Worries; Decision-making; Micro-enterprises; Field Experiments <sup>
+
+<sup> **JEL**: I32, C93, G02 <sup>
+
+
+<br>
+<br>
+
+
+### Working papers
+
+[**Learning to Grow from Peers: Experimental Evidence from Small Retailers in Indonesia**](http://documents.worldbank.org/curated/en/163271562607211906/pdf/Learning-to-Grow-from-Peers-Experimental-Evidence-from-Small-Retailers-in-Indonesia.pdf)
+
+with Patricio S. Dalton, Burak Uras, and Bilal Zia
+
+*World Bank Policy Research WP* (submitted)
+
+Business practices and performance vary widely among local peers. This paper identifies key determinants of such heterogeneity among a sample of small urban retail shops in Indonesia, and experimentally tests whether learning about the best practices of local peers is valuable for business growth. Through extensive baseline quantitative and qualitative fieldwork, the study develops a handbook that associates specific business practices with performance and provides detailed implementation guidance informed by exemplary local shop owners. Instead of offering formal training or in-depth counseling, this handbook is simply distributed to a randomly selected sample of shop owners and complemented with three experiential learning modules: one group is invited to watch a documentary video on experiences of highly successful peers, another is offered light in-shop assistance on the implementation of the hand-book, and a third group is offered both. Eighteen months after the intervention, the study finds no effect of offering the handbook alone, but significant impact on practice adoption when the handbook is coupled with experiential learning. On business performance, the study finds sizable and significant improvements as well, up to an increase of 35 percent in profits and an increase of 16.7 percent in revenues. The types of practices adopted map these performance improvements to efficiency gains rather than other channels. The analysis suggests that these interventions are simple, scalable, and highly cost-effective.
+
+<sup> **Coverage**: [Nesta]()
+
+<sup> **Keywords**: Business Growth, Efficiency Gains, Small-scale Enterprises, Peer Knowledge, Self-learning, Social Learning <sup>
+
+<sup> **JEL Codes**: O12, L26, M20, O31, O33, O35, O17, M50 <sup>
+
+
+<br>
+
+
+[**Determinants and Dynamics of Business Aspirations: Evidence from Small-scale Entrepreneurs in an Emerging Market**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3128196)
+
+with Patricio S. Dalton and Bilal Zia 
+
+*SSRN Working Paper*
+
+Small-scale entrepreneurs are ubiquitous in emerging market economies, yet very few graduate to become larger businesses. We ask whether such entrepreneurs even aspire to grow, and if so, on which dimensions of the business? What factors inﬂuence these aspirations, how realistic are they, and do entrepreneurs dynamically update them based on realized outcomes? Using a unique panel data set of small-scale retailers in Indonesia, we show that the average business has strong short- and long-term aspirations for growth in shop size, number of employees, number of customers, and sales. Yet, more than half of the businesses report no aspirations for growth in the next 12 months, and 16 percent fail to imagine an ideal business over the long-term. Entrepreneurs with low proﬁts, business skills, and agency beliefs, as well as those who are older, female, and less educated have significantly lower aspirations. Analysis from a year later shows that most entrepreneurs fail to set realistic aspirations at baseline, but significantly adjust their aspirations to realistic levels with realized outcomes. The analysis also shows baseline aspirations are a strong predictor of measures of business expansion and innovation, as well as performance outcomes a year later.
+
+<sup> **Coverage**: Let's Talk Development
+
+<sup> **Keywords**: Aspirations, Adaptive Learning, Micro-enterprises, Innovation, Small-business Growth, Firm Performance.
+
+<sup> **JEL Codes**: O12; L26; M20; O17; M50
+
+
+<br>
+<br>
+
+
+### Selected work in progress
+
+
+**Shocking Business Aspirations: Experimental Evidence from Small-scale Entrepreneurs in a Developing Economy**
+
+with Patricio S. Dalton and Bilal Zia
+
+
+<br>
+
+
+**Long-term Evidence of the Impact of Child-health Interventions in Developing Countries**
+
+with Prashant Bharadwaj, Craig McIntosh, and Ted Miguel
+
+<sup> **Coverage**: [VoxEU]
+
+
