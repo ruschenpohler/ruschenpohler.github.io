@@ -29,7 +29,7 @@ github_username:  ruschenpohler
 # Build settings
 theme: paper
 plugins:
-  - jekyll-feed
+#  - jekyll-feed
 
 # Copied to Gemfile and to config -- potentially wrong here
 #group :jekyll_plugins do
