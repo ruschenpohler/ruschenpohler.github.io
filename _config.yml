@@ -27,7 +27,7 @@ twitter_username: ruschenpohler
 github_username:  ruschenpohler
 
 # Build settings
-theme: academic
+theme: paper
 plugins:
   - jekyll-feed
 
