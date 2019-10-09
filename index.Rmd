@@ -17,19 +17,15 @@ My CV is available [here]("files/JRUE CV August19.pdf")
 ### Interests                     
 
 .pull-left[
-.smaller[
 ** Primary Interests
   + Development Economics       
   + Behavioural Economics
 ]
-]
 
 .pull-right[
-.smaller[
 ** Secondary Interests
   + Experimental Economics
   + Social and Cognitive Psychology
-]
 ]
 
 ### Contact
