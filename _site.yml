@@ -3,8 +3,8 @@ output_dir: "."
 navbar:
   title: "Julius Ruschenpohler"
   left:
-    - text: "Welcome"
-      href: welcome.html
+    #- text: "Welcome"
+    #  href: welcome.html
     - text: "Research"
       href: research.html
     - text: "Teaching"
