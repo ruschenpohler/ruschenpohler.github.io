@@ -3,30 +3,27 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-<img src="pics/JRUE portrait.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
+<img src="pics/JRUE portrait.jpg" style="width:35%; border:10px solid; margin-right: 20px" align="left">
 
 ### About me
 
 I am a post-doctoral researcher at the University of California, Berkeley, and affiliated with the Center for Effective Global Action (CEGA).
 
-I hold a Ph.D. in Economics from Tilburg University where I am also affiliated with the Experimental Economists at Tilburg. 
+I hold a Ph.D. in Economics from Tilburg University where I am affiliated with the Experimental Economists at Tilburg. 
 
-My CV is available [here]("files/JRUE CV August19.pdf")
+A recent version of my CV is available [here]("files/JRUE CV August19.pdf").
 
 
-### Interests                     
+### Research Interests                     
 
-.pull-left[
-** Primary Interests
-  + Development Economics       
-  + Behavioural Economics
-]
+**Primary Interests**  
+Development Economics  
+Behavioural Economics
 
-.pull-right[
-** Secondary Interests
-  + Experimental Economics
-  + Social and Cognitive Psychology
-]
+**Secondary Interests**  
+Experimental Economics  
+Social and Cognitive Psychology
+
 
 ### Contact
 
@@ -34,4 +31,4 @@ University Hall, Room 714B
 2199 Addison St
 Berkeley, CA 94720
 
-Email:  ruschenpohler(at)berkeley(dot)edu
+Email: ruschenpohler(at)berkeley(dot)edu
