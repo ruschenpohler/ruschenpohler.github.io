@@ -14,6 +14,8 @@ navbar:
   right:
     - icon: fa-envelope fa-lg
       href: contact.html
+    - icon: fa-google-scholar fa-lg
+      href: https://scholar.google.com/citations?user=2vi_PeoAAAAJ&hl=en
     - icon: fa-github fa-lg
       href: http://github.com/ruschenpohler
     - icon: fa-twitter fa-lg
