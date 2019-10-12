@@ -10,20 +10,21 @@ A recent version of my **CV** is available <a href="files/JRUE_CV_Oct2019.pdf" c
 
 ### Current position
 
-<br>
+<p>
+<p>
 
 * Postdoc, University of California, Berkeley (2019-_ongoing_)
   + Affiliated with the Center for Effective Global Action (CEGA)
 
 <br>
-<br>
 
 ### Education
 
-<br>
+<p>
 
 * Ph.D., Economics, Tilburg School of Economics and Management (2019)
   + Visiting research student at J-PAL South-East Asia (2015-2017)
+<p>
 
 * M.Sc., Behavioural Sciences, Warwick University (2013)
 
