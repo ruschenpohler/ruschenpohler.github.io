@@ -3,27 +3,36 @@
 
 <br>
 
-### Teaching Assistance
+### Teaching
 
 <br>
 
-**UC Berkeley**
-
-* Summer Institute in Computational Social Science (_planned for 2020_)
-
-
 **Tilburg University**
 
-* Advancing Society: Markets, Games, and Behavior (Behavioral Economics; 2018)
+* [TA] Advancing Society: Markets, Games, & Behavior (Behavioral Econ; 2018)
 
-* Development Economics (for Economics & Business; 2017, 2018)
+* Introduction to Development Economics (2017, 2018)
+  + For Economics and for Business students
+
+<p>
 
 * Econometrics Lab (Data preparation, visualisation, and analysis in Stata)
 
 
 **Bielefeld Unversity**               
 
-* Introductory Statistics for Psychology (2010)
+* [TA] Introductory Statistics for Psychology (2010)
+
+<br>
+<br>
+
+### Organizational Work
+
+<br>
+
+**UC Berkeley**
+
+* Co-organizer for the Summer Institute in Computational Social Science (_planned for 2020_)
 
 <br>
 <br>
@@ -39,3 +48,6 @@
 * Nat Nawawongwiwat (B.Sc., 2018)
 
 * Robin Aarts (B.Sc., 2017)
+
+
+
