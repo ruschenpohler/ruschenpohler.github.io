@@ -1,6 +1,8 @@
 ---
 ---
 
+<title> Ruschenpohler</title>
+
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 <img src="pics/JRUE_portrait.JPG" style="width:40%; border:2.5px solid; margin-right: 40px; margin-top: 30px; " align="right">
