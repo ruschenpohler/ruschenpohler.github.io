@@ -51,7 +51,7 @@ with [Patricio S. Dalton](https://sites.google.com/site/psdalton/research), [Bur
 
 <p>
 
-<sup> **Material**: [Documentary of successful peers](https://www.youtube.com/watch?v=7kNz0k7-y4E&feature=youtu.be); [Handbook of local best practices]("files/LearningFromPeers_Handbook.pdf")
+<sup> **Material**: [Documentary of successful peers](https://www.youtube.com/watch?v=7kNz0k7-y4E&feature=youtu.be); <a href="files/LearningFromPeers_Handbook.pdf" class="image fit">Handbook of local best practices</a>
 
 <sup> **Coverage**: [Nesta](https://www.nesta.org.uk/blog/dont-overlook-local-skills-effective-policies-improve-business-practice/)
 
