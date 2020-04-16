@@ -3,6 +3,6 @@
 
 <br>
 
-In case the plugin does not build, please find my **CV** <a href="files/JRUE_CV_Feb2020.pdf" class="image fit">here</a>.
+In case the plugin does not build, please find my **CV** <a href="files/JRUE_CV_April2020.pdf" class="image fit">here</a>.
 
-<embed src="https://ruschenpohler.github.io/files/JRUE_CV_Feb2020.pdf" type="application/pdf" width="900" height="800" />
+<embed src="https://ruschenpohler.github.io/files/JRUE_CV_April2020.pdf" type="application/pdf" width="900" height="800" />
