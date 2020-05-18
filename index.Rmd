@@ -8,20 +8,29 @@
 
 <br>
 
+### About Me
+
 <p>
 
-I am currently a **postdoctoral researcher** at the **University of California, Berkeley**, affiliated with the Center for Effective Global Action (**CEGA**).
+I am a **postdoctoral researcher** at the **University of California, Berkeley**, affiliated with the Center for Effective Global Action (**CEGA**).
 
-I hold a Ph.D. in Economics from Tilburg University where I am affiliated with the Experimental Economists at Tilburg. 
+I hold a Ph.D. in Economics from Tilburg University where I am affiliated with the Experimental Economists at Tilburg.
 
 A recent version of my **CV** is available <a href="files/JRUE_CV_May2020.pdf" target="_blank">here</a>.
-
 
 <br>
 
 ### Research Interests    
 
 <p>
+
+I am interested in understanding how individuals' social environments shape their economic
+decisions. I primarily use field experiments to examine the role of local knowledge, social learning,
+preference formation, and the impact and evolution of social norms and local institutions as
+determinants and causes of conditions of poverty.
+
+
+
 
 **Primary Interests**  
 Development Economics  
