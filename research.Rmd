@@ -87,23 +87,27 @@ Forthcoming in the *Journal of Economic Psychology*
 
 ### Selected Work in Progress
 
-<br>
 
-__Leveraging Religious Networks for Local Public Goods Provision: Experimental Evidence from Jakarta __
+__Impact Evaluation of Legal and Justice Reforms in the Philippines__
 
-<br>
-
-__The Role of Parental Aspirations, Beliefs, and Social Norms in Children’s Educational Performance in Uganda__
-
-with [M. Walker (UC Berkeley)](http://www.michaelwwalker.me/)
+with [Bilal Siddiqi](http://bilalsiddiqi.com/)
 
 <br>
 
-__Predicting Long-term Impacts of Child-health Interventions__
+__Estimating Long-term Impacts from Short-term Data__
 
 with [E. Miguel (UC Berkeley)](http://emiguel.econ.berkeley.edu/), [M. Walker (UC Berkeley)](http://www.michaelwwalker.me/)
 
-<sup> **Coverage**: [VoxEU](https://voxeu.org/vox-talks/rcts-long-run)
+<br>
+
+__Leveraging Local Networks for Social Norm Change in Indonesia__
+
+<br>
+
+__Social Determinants of Aspirations in a Network of Students__
+
+
+
 
 
 
