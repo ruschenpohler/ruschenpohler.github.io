@@ -3,16 +3,15 @@
 
 <br>
 
-
-### Working Papers
+### Publications
 
 <br>
 
-[__Curating Local Knowledge: Experimental Evidence from Small Retailers in Indonesia__](files/CuratingKnowledge_Indonesia.pdf)
+[__Curating Local Knowledge: Experimental Evidence from Small Retailers in Indonesia__](https://academic.oup.com/jeea/advance-article/doi/10.1093/jeea/jvab007/6134759)
 
 with [Patricio S. Dalton](https://sites.google.com/site/psdalton/), [Burak Uras](https://sites.google.com/site/burakruras/), and [Bilal Zia](https://sites.google.com/site/decbilalzia/home)
 
-*World Bank Policy Research WP* (submitted)
+Accepted at *Journal of the European Economic Association*
 
 <details>
 <summary>**Abstract**</summary>
@@ -28,6 +27,37 @@ with [Patricio S. Dalton](https://sites.google.com/site/psdalton/), [Burak Uras]
 <sup> **Coverage**: [Nesta](https://www.nesta.org.uk/blog/dont-overlook-local-skills-effective-policies-improve-business-practice/)
 
 <sup> **Keywords**: Business Growth, Efficiency Gains, Small-scale Enterprises, Peer Knowledge, Self-learning, Social Learning
+
+<br>
+
+[__**Worries of the Poor: The Impact of Financial Burden on the Risk Attitudes of Micro-entrepreneurs**__](https://www.sciencedirect.com/science/article/pii/S016748701830727X)
+
+with [Patricio S. Dalton](https://sites.google.com/site/psdalton/) and Nhung Nguyen
+
+*Journal of Economic Psychology*, Vol. 79, August 2020
+
+
+<details>
+<summary>**Abstract**</summary>
+
+> <sub>We randomly expose the owners of small retail businesses in Vietnam to scenarios that trigger financial worries and study the effect of this intervention on risk attitudes. Using an incentive-compatible investment game, we ﬁnd that entrepreneurs exposed to financial worries are more likely to seek ﬁnancial risks than those assigned to a placebo treatment. In line with psychological theory on the effect of affective states and stress on risk-taking behavior, this effect is stronger for owners of shops which are smaller and less exposed to large income shocks in their everyday business. We further show that the effect of financial worries on risk attitudes is not explained by changes in the cognitive functioning of the treated. The findings point to the crucial role of financial worries in economic decision-making under poverty.</sub>
+
+</details>
+
+<p>
+
+<sup> **Material**: [Replication file and data](https://www.sciencedirect.com/science/article/pii/S016748701830727X#ec-research-data)
+
+<sup> **Keywords**: Poverty; Risk Aversion; Financial Worries; Decision-making; Micro-enterprises; Field Experiments
+
+
+<br>
+<br>
+
+
+
+
+### Working Papers
 
 <br>
 
@@ -55,34 +85,6 @@ with [Patricio S. Dalton](https://sites.google.com/site/psdalton/research) and [
 <br>
 <br>
 
-
-### Publications
-
-<br>
-
-[__**Worries of the Poor: The Impact of Financial Burden on the Risk Attitudes of Micro-entrepreneurs**__](https://www.sciencedirect.com/science/article/pii/S016748701830727X)
-
-with [Patricio S. Dalton](https://sites.google.com/site/psdalton/) and Nhung Nguyen
-
-Forthcoming in the *Journal of Economic Psychology*
-
-
-<details>
-<summary>**Abstract**</summary>
-
-> <sub>We randomly expose the owners of small retail businesses in Vietnam to scenarios that trigger financial worries and study the effect of this intervention on risk attitudes. Using an incentive-compatible investment game, we ﬁnd that entrepreneurs exposed to financial worries are more likely to seek ﬁnancial risks than those assigned to a placebo treatment. In line with psychological theory on the effect of affective states and stress on risk-taking behavior, this effect is stronger for owners of shops which are smaller and less exposed to large income shocks in their everyday business. We further show that the effect of financial worries on risk attitudes is not explained by changes in the cognitive functioning of the treated. The findings point to the crucial role of financial worries in economic decision-making under poverty.</sub>
-
-</details>
-
-<p>
-
-<sup> **Material**: [Replication file and data](https://www.sciencedirect.com/science/article/pii/S016748701830727X#ec-research-data)
-
-<sup> **Keywords**: Poverty; Risk Aversion; Financial Worries; Decision-making; Micro-enterprises; Field Experiments
-
-
-<br>
-<br>
 
 
 ### Selected Work in Progress
