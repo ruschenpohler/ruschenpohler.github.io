@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>First Steps in Machine Learning</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Julius Ruschenpohler" />
+    <meta name="date" content="2019-10-23" />
+    <link href="Intro-ML_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="Intro-ML_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="Intro-ML_files/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# First Steps in Machine Learning
+## A Conceptual Introduction to Penalized Regression
+### Julius Ruschenpohler
+### 23 October 2019
+
+---
+
+class: inverse, middle
+
+
+
+
+.pull-left[
+.smaller[
+
+### FIRST PART
+I. Standard Regression Inference  
+II. Why Machine learning?   
+III. What is the Intuition behind ML?
+ 
+]
+]
+
+.pull-right[
+.smaller[
+  
+### SECOND PART
+IV. Where Can ML be Put to Use?  
+V. What Caveats Apply?
+
+]
+]
+
+---
+
+layout: false
+# FIRST PART
+
+## Machine Learning: Why and How?
+
+
+.pull-left[
+
+### I. [Standard Regression Inference](#standard)
+  - [An Inference Problem](#standard)
+  - [Link Function](#standard1)
+  - [Loss Function](#standard2)
+  - [Minimizing Statistical Loss](#standard3)
+  
+]
+
+.pull-right[
+
+### II. [Why Machine Learning](#whyML)
+  - [High Dimensionality](#whyMLA)
+  - [Prediction vs. Causal Inference](#whyMLB)
+  
+### III. [What is the Intuition behind ML?](#whatMLA)
+  - [Goal of Machine Learning](#whatMLA)
+  - [Regularization and Cross-validation](#whatMLB)
+  - [Bias-variance Tradeoff](#whatMLC)
+  - [Supervised vs. Unsupervised Learning](#whatMLD)
+  - [More Complex ML Algorithms](#whatMLE)
+
+]
+
+
+---
+name: standard
+
+# I. Standard Regression Inference
+
+## An Inference Problem
+
+Given a set of covariates, we would like to predict an outcome: `\(\mathbb {E} \left[ y_{i} | x_{i} \right]\)`.
+
+That is, what is `\(y_{i}\)` given `\(x_{i}\)`?
+
+  + Example: What impact does red meat `\(x_{i}\)` have on general health `\(y_{i}\)`?
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-1-1.svg" style="display: block; margin: auto;" /&gt;
+
+### Practically, we have to:
+
+.pull-left[
+
+1. Link covariates to outcome (link fct)
+1. Define best fit criteria (loss fct)
+1. Maximize fit
+]
+
+.pull-right[
+
+**Can we make &lt;br/&gt; sense of this &lt;br/&gt; graphically?**
+]
+
+---
+name: standardA_1
+
+# I. Standard Regression Inference
+
+## 1. Link Function
+
+.pull-left[
+
+Data on daily red meat consumption
+
+`$$X = \begin{bmatrix} 
+    x_{1,1} &amp; x_{1,2} &amp; \dots \\
+    \vdots &amp; \ddots &amp; \\
+    x_{n,1} &amp;        &amp; x_{n,p} 
+    \end{bmatrix}$$`
+]
+
+.pull-right[
+
+Data on daily measures of blood pressure
+
+`$$Y = \begin{bmatrix} 
+    y_{1,1} &amp; y_{1,2} &amp; \dots \\
+    \vdots &amp; \ddots &amp; \\
+    y_{n,1} &amp;        &amp; y_{n,k} 
+    \end{bmatrix}$$`
+]
+
+**Link fct**: All else equal, does meat consumption `\(x_{i}\)` predict blood pressure `\(y_{i}\)`?
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-2-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+name: standard1
+
+# I. Standard Regression Inference
+
+In other words, we need a function that links meat consumption to blood pressure:
+
+`$$\mathbb { E } \left[ y_{i} | x_{i} \right] = f \left( \eta _ { i } \right)$$`
+
+Here, `\(\eta_{i}\)` is our model that predicts blood pressure.
+
+For simplicity, let blood pressure be a linear fct of meat consumption:
+
+.pull-left[
+
+&lt;br/&gt;
+&lt;br/&gt;
+
+`\(\eta _ { i } = \alpha + x_{i} \beta\)`
+
+&lt;br/&gt;
+&lt;br/&gt;
+
+But we still don't know **_what_ straight line best approximates the relationship**!
+]
+
+.pull-right[
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-3-1.svg" style="display: block; margin: auto;" /&gt;
+]
+
+
+---
+name: standard2
+
+# I. Standard Regression Inference
+
+## 2. Loss Function
+
+Second, we need to define "best fit".
+
+Equivalent to saying we need to minimize statistical loss `\(\ell ( \alpha , \beta )\)`.
+
+**Let's make sense of this graphically**!
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-4-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+name: standard2a
+
+# I. Standard Regression Inference
+
+With quadratic loss fct `\(\ell(\alpha,\beta)\)` (as per "ordinary least squares"), we have:
+
+`$$\ell(\alpha,\beta) = \sum_{i=1} ^ {n} \left( y_{i} - \eta_{i} \right)^{2}$$`
+That is, we consider the squared distance between our model prediction `\(\eta_{i}\)` of blood pressure and real measures of blood pressure `\(y_{i}\)`.
+
+**Now, all we need is to find the straight line that minimizes `\(\ell(\alpha,\beta)\)`**.
+
+&lt;br/&gt;
+
+A process called Stochastic Gradient Descent does this for us!
+
+(Some details in [Additional Slides](#extras1))
+
+
+---
+name: whyML
+
+# II. Why Machine Learning?
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-5-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+name: whyMLA
+
+# II. Why Machine Learning?
+
+## A) High Dimensionality and Sparcity
+
+### High dimensionality
+
+But what if we are not only interested in the effect of meat consumption?
+
+**What if the set of covariates `\(p\)` is large**?
+
+Potentially: `\(p \gg n\)`!
+
+.pull-left[
+
+`$$X = \begin{bmatrix} 
+    x_{1,1} &amp; x_{1,2} &amp; x_{1,3} &amp;x_{1,4} &amp; \dots \\
+    \vdots &amp; \ddots &amp; \\
+    x_{n&lt;p,1} &amp;        &amp;         &amp;    &amp; x_{n&lt;p,p_{large}} 
+    \end{bmatrix}$$`
+]
+
+.pull-right[
+
+`$$Y = \begin{bmatrix} 
+    y_{1,1} &amp; y_{1,2} &amp; \dots \\
+    \vdots &amp; \ddots &amp; \\
+    y_{n,1} &amp;          &amp; y_{n,p} 
+    \end{bmatrix}$$`
+]
+
+&lt;br/&gt;
+
+We need ways to generate **sparse (~parsimonious) models** that predict well in **high-dimensional space** (~many covariates).
+
+
+---
+name: whyMLA1
+
+# II. Why Machine Learning?
+
+### Sparcity
+
+Large number of potential covariates ( `\(p \gg n\)` ) poses challenge to conventional estimation
+
+**Condition of sparcity**
+- Existence of approximations to complete set of potential controls `\(p\)` 
+  + ... require **limited set of controls `\(s\)`**
+  + ... **render approximation error small** (comp. to estimation error)
+- Hence: Estimation tractable!
+
+---
+name: whyMLB
+
+# II. Why Machine Learning?
+
+## B) Prediction `\(\neq\)` Causal Inference
+
+### Causal Inference
+
+**Conditional covariances** (true data generating process)
+* Example: All else equal, does meat consumption `\(x_{i}\)` predict blood pressure `\(y_{i}\)`?
+* Search for `\(\hat{\beta}\)`
+
+### Prediction
+
+**Best prediction**
+* Example: What is the best prediction for blood pressure `\(y_{i}\)` given a large set of covariates `\(p_{large}\)`?
+* Origin: Face recognition
+* Search for `\(\hat{y}\)`
+
+---
+name: whyMLB1
+
+# II. Why Machine Learning?
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-6-1.svg" style="display: block; margin: auto;" /&gt;
+
+Two covariates are highly (negatively) correlated
+* Confidence interval is elliptic
+* Cuts through both axes, but not the origin!
+* Hence: 
+  + **Cannot reject individual hypotheses** that `\(\beta\)`s are zero
+  + **Can reject hypothesis** of joint significance!
+
+
+---
+name: whatMLA
+
+# III. What is the Intuition behind ML?
+
+## A) Goal of Machine Learning
+
+&lt;br/&gt;
+**Construct a sparse (~parsimonious) model `\(\eta\)` from high-dimensional data**
+
+Model `\(\eta_{i}\)` predicts label `\(y_{i}\)` (=outcome) from a subset of features `\(x_{i}\)` (= covariates)
+
+Features `\(x_{i}\)` need to be selected (or weighed) such that model `\(\eta\)` best generalizes to new data ("out of sample")
+
+But: At the core, **still (out-of-sample) loss minimization**!
+
+
+---
+name: whatMLB
+
+# III. What is the Intuition behind ML?
+
+## B) Penalized Regression or Regularization
+
+Open question: **How to deal with high dimensionality in data?**
+
+Let's remember the loss fct: `\(\ell(\alpha,\beta)\)`
+
+* However, now the set of potential covariates is large!
+
+To make the model less complex, we would like to select only the most important predictors ("regularization").
+
+Let's penalize model complexity:
+
+`$$\min \left\{\ell(\alpha,\beta) + n \lambda \sum_{j=1}^{p} K_{j} \left (\beta_{j} \right) \right\}$$`
+
+**Cost fct**: `\(K_{j} \left( \beta_{j} \right)\)` is a cost fct that defines the penalty regime
+
+**Shrinkage**: `\(\lambda\)` governs the magnitude of penalty or shrinkage.
+
+
+---
+name: whatMLB1
+
+# III. What is the Intuition behind ML?
+
+### Types of cost fcts
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-7-1.svg" style="display: block; margin: auto;" /&gt;
+
+Take-away: Different ways of penalizing model complexity.
+
+&lt;br/&gt;
+
+But **__how much__ do we want to penalize complexity**? 
+
+That is, how to choose `\(\lambda\)`? In other words, how do we validate a chosen `\(\lambda\)`?
+
+
+---
+name: whatMLB2
+
+# III. What is the Intuition behind ML?
+
+### 1. Training and Test Sample
+
+.pull-left[
+
+`$$X_{train} = \begin{bmatrix} 
+    x_{1,1} &amp; x_{1,2} &amp; \dots \\
+    \vdots &amp; \ddots &amp; \\
+    x_{n,1} &amp;        &amp; x_{n,p} 
+    \end{bmatrix}$$`
+    
+`$$X_{test} = \begin{bmatrix} 
+    x_{1,1} &amp; x_{1,2} &amp; \dots \\
+    \vdots &amp; \ddots &amp; \\
+    x_{n,1} &amp;        &amp; x_{n,p} 
+    \end{bmatrix}$$`
+]
+
+
+.pull-right[
+
+`$$Y_{train} = \begin{bmatrix} 
+    y_{1,1} &amp; y_{1,2} &amp; \dots \\
+    \vdots &amp; \ddots &amp; \\
+    y_{n,1} &amp;        &amp; y_{n,k} 
+    \end{bmatrix}$$`
+    
+`$$?_{test} = \begin{bmatrix} 
+    ?_{1,1} &amp; ?_{1,2} &amp; \dots \\
+    \vdots &amp; \ddots &amp; \\
+    ?_{n,1} &amp;        &amp; ?_{n,k} 
+    \end{bmatrix}$$`
+]
+
+### 2. `\(k\)`-fold Cross-validation
+
+Same principle in `\(k-1\)` training and one test sub-samples (details in [Additional Slides](#extras2))
+
+
+### 3. Leave-one-out Cross-validation
+
+Split sample in as many sub-samples as there are observations
+
+
+---
+name: whyMLC
+
+# II. What is the Intuition behind Machine Learning?
+
+## C) Bias-Variance Tradeoff
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-8-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+name: whatMLD
+
+# III. What is the Intuition behind ML?
+
+## D) Supervised vs. Unsupervised ML
+
+### Supervised Machine Learning
+
+* Predicting Labels (~outcome)
+* Classification
+
+  + All of the above is supervised machine learning!
+  + Here, we cover only penalized regression which fall under the first part
+
+### Unsupervised Machine Learning
+
+* Dimensionality reduction
+* Clustering
+
+
+- This presentation focusses on supervised ML.
+
+
+---
+name: whatMLE
+
+# III. What is the Intuition behind ML?
+
+
+## E) More Complex ML Algorithms
+
+* **Regression Trees**
+
+  + Iterative splits
+  + Pools observations into orthogonal sub-spaces over features
+  + Based on similarity in the label
+  + Criteria e.g. Gini
+
+* **Random Forests**
+
+  + Ensemble of regression trees that imposes randomness across trees
+
+* **Gradient Boosted Trees**
+
+  + Ensemble of regression trees that are iteratively fit to previous trees' residuals
+
+
+---
+name: whatMLE2
+
+# III. What is the Intuition behind ML?
+
+* **Neural Nets**
+
+  + Inter-connected nodes organized into layers (~structure of the brain)
+  + Signal passes through nodes which perform non-linear transformation on signal
+  + Resulting prediction is highly flexible
+  + Black box
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-9-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+name: whatMLF
+
+# III. What is the Intuition behind ML?
+
+## Take-away
+
+&lt;br/&gt;
+
+Central issue: In **high-dimensional environments**, we need to find ways to come up with **sparse models** that predict outcomes well **out of sample**.
+
+* One way is to **penalize model complexity** as a part of the loss fct `\(\ell(\alpha,\beta)\)`.
+
+* That is, we incorporate a **shrinkage** parameter `\(\lambda\)` and a **cost fct** `\(K_{j} \left (\beta_{j} \right)\)`.
+
+* **Regularization** is the process of shrinking and selecting some parameters, but not others.
+
+* **Cross-validation** techniques are a way to set `\(\lambda\)` such that our model `\(\eta\)` best predicts out of sample.
+
+* We call this data the **test sample**, and data the model is fitted on the **training data**.
+
+
+---
+
+layout: false
+# SECOND PART
+
+## Application for and Caveats to ML
+
+
+.pull-left[
+
+### IV. [Where to Use ML?](#whereML1)
+  - [Prediction and Measurement](#whereML1)
+  - [Causality](#whereML2)
+  - [Heterogeneity](#whereML3)
+  - [Pre-analysis Plans](#whereML4)
+]
+
+.pull-right[
+
+### V. [What Caveats Apply](#caveats1)
+  - [Ethics](#caveats1)
+  - [Opacity](#caveats2)
+  - [Model Complexity](#caveats3)
+  - [Reproducibility](#caveats4)
+  - [Model Robustness](#caveats5)
+  - [Causality](#caveats6)
+]
+
+
+
+---
+
+name: whereML1
+
+# IV. Where can ML be Put to Use?
+
+## A) Prediction and Measurement
+
+### Predicting Firm Performance (McKenzie &amp; Sansone, JDE 2019)
+
+Paper: ["_Predicting Entrepreneurial Success is Hard: Evidence from a Business Plan Competition in Nigeria_"](https://www.sciencedirect.com/science/article/abs/pii/S0304387818305601?via%3Dihub) [(UNGATED)](https://openknowledge.worldbank.org/handle/10986/32160)
+
+* YouWIN! **business plan competition** in Nigeria
+* Data from 1,000 winners and 1,000 losers, baseline and 3-yrs follow-up
+
+3 methods to predict entrepreneurial success:
+1. **Human judges** score business plans
+1. **Simple logistic regression models** by expert academics
+1. **Machine learning methods**, i.e. LASSO, Support vector machines (SVM), and Boosting
+
+
+---
+
+name: whereML1a
+
+# IV. Where can ML be Put to Use?
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-10-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+name: whereML1b
+
+# IV. Where can ML be Put to Use?
+
+### Predicting Poverty (Blumenstock et al., Science 2015)
+
+Paper: ["_Predicting Poverty and Wealth from Mobile Phone Metadata_"](https://science.sciencemag.org/content/350/6264/1073) [(UNGATED)](https://www.researchgate.net/publication/284766595_Predicting_poverty_and_wealth_from_mobile_phone_metadata)
+
++ Also helpful: [Blumenstock (AEAPP, 2018)](https://www.aeaweb.org/articles?id=10.1257/pandp.20181033) [(UNGATED)](https://escholarship.org/uc/item/1g7866nq)
+
+* Rwandan **mobile phone metadata** over a year (N = 1,5M, calls, texts, mobility)
+* Follow-up **phone surveys** of geographically stratified random sample (n = 856) on assets, housing, welfare
+* Authors ..
+  + .. use training sample to train and cross-validate a set of algorithms
+  + .. **predict wealth for test sample** (n `\(\approx\)` 1.5M)
+
+
+---
+
+name: whereML1c
+
+# IV. Where can ML be Put to Use?
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-11-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+name: whereML1d
+
+# IV. Where can ML be Put to Use?
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-12-1.svg" style="display: block; margin: auto;" /&gt;
+
+.pull-left[
+  
+**A**: Predicted wealth composite score
+]
+
+.pull-right[
+
+**B**: Actual wealth (Admin 2010, N = 12,792 HHs)
+]
+
+
+**Prediction accuracy for asset ownership was 64 to 92 percent**!
+
+
+---
+
+name: whereML2
+
+# IV. Where can ML be Put to Use?
+
+## B) Causality
+
+### Covariate Selection through Regularization (Belloni et al., ReStud 2014)
+
+Paper: [“_Inference on Treatment Effects after Selection among High-Dimensional Controls_”](https://academic.oup.com/restud/article/81/2/608/1523757/) [(UNGATED)](https://arxiv.org/abs/1201.0224)
+
+* Scenario: Experimental study, selection into take-up, high-dimensional data with `\(p \gg n\)`
+* Goal: Predict take-up from universe of covariates `\(p\)`
+
+“**Double-selection procedure**”:
+1. Use LASSO to select set of predictors for outcome `\(y_{i}\)`
+1. Use LASSO to select set of predictors for treatment assignment `\(d_{i}\)`
+1. Choose predictors in the union of sets as set of controls `\(x_{i}\)`
+
+* Similar literature: 
+  + Instrumental variables estimation (e.g., [Spiess, 2017](https://scholar.harvard.edu/spiess/publications/applications-james-stein-shrinkage-ii-bias-reduction-instrumental-variable); [Hartford et al., 2017](http://proceedings.mlr.press/v70/hartford17a.html))
+  
+
+---
+
+name: whereML3
+
+# IV. Where can ML be Put to Use?
+
+## C) Hetereogeneity
+
+### Predicting Treatment Heterogeneity
+
+Papers:
+  + [Athey and Imbens(PNAS 2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4941430/) [(UNGATED)](https://arxiv.org/abs/1504.01132)
+  + [Wagner and Athey (JASA 2017)](https://www.tandfonline.com/doi/full/10.1080/01621459.2017.1319839) [(UNGATED)](https://arxiv.org/abs/1510.04342)
+  + [Davis and Heller (AEAPP 2017)](https://www.aeaweb.org/articles?id=10.1257/aer.p20171000) [(UNGATED)](https://ideas.repec.org/a/aea/aecrev/v107y2017i5p546-50.html)
+  
+* **Random trees and random forests to select covariates for heterogeneous treatment estimation**
+
+
+---
+
+name: whereML5
+
+# IV. Where can ML be Put to Use?
+
+## E) Pre-analysis Plans
+
+### Analytical Choices Guided by ML (Ludwig et al., AEAPP 2019)
+
+Paper: ["Augmenting Pre-analysis Plans with Machine Learning"](https://www.aeaweb.org/articles?id=10.1257/pandp.20191070)
+
+* **Specificity conundrum**: Theory often speaks little to specific choices which PAPs require to prevent data mining (e.g. data aggregation, sub-groups, controls, fct forms)
+
+* **Standard PAP**: Fully specifies entire set of analytical choices
+* **Pure ML PAP**:  Start with set of variables and make choices according to prediction problem
+* **Augmented PAP**: Take the best of both worlds
+
+Advantages:
+1. Benefits from ML flexibility with, at most, limited costs in power
+1. Limits the need of researchers to make arbitrary analytical choices
+1. Integrates ex-post analysis without risking p-hacking
+
+
+---
+
+name: caveats1
+
+# V. What Caveats Apply?
+
+## A) Ethics
+
+&lt;br/&gt;
+
+Numerous ethical issues with Big Data
+
+* **Informed consent** as part of experiment
+  + Use of Big Data generally problematic
+  + Scraping data from website unbenownst to provider even more so!
+  
+* **Privacy** in general
+  + Same as above
+  
+* **Externalities**
+  + Agreeing to release network information without consent of network members
+
+
+
+---
+
+name: caveats2
+
+# V. What Caveats Apply?
+
+## B) Opacity or explainability problem ("black box")
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-13-1.svg" style="display: block; margin: auto;" /&gt;
+
+Link: [Hutson (2018a)](https://www.sciencemag.org/news/2018/05/ai-researchers-allege-machine-learning-alchemy)
+
+
+---
+
+name: caveats2a
+
+# V. What Caveats Apply?
+
+### Two sides to this argument
+
+Especially for more complex ML algorithms:
+ 
+1. **Opaque process**
+  + De-bugging difficult
+    
+1. **Prediction without regard of DGP**
+  + Intelligibility?
+  + External validity?
+  + Fairness?
+  + Trust?
+    
+    
+* Literature: e.g., [Ribeiro, Singh, and Guestrin (2016)](https://arxiv.org/abs/1602.04938)
+
+
+---
+
+name: caveats3
+
+# V. What Caveats Apply?
+
+## C) Model Complexity
+
+### Danger of Overfitting
+
+Model `\(\eta\)` explains variation that is unique to training sample
+* Lowers external validity
+ 
+`\(\rightarrow\)` Bias-variance tradeoff
+
+### Many Researcher Degrees of Freedom
+
+* Data pre-processing
+  + Example: Text analysis (tokens, n-grams, libraries, etc.)
+* ML algorithm
+* Regularization parameters
+* Cross-validation methods/parameters, etc.
+
+
+---
+
+name: caveats4
+
+# V. What Caveats Apply?
+
+## D) Reproducibility
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-14-1.svg" style="display: block; margin: auto;" /&gt;
+
+Link: [Hutson (2018b)](https://science.sciencemag.org/content/359/6377/725)
+
+
+---
+
+name: caveats4a
+
+# V. What Caveats Apply?
+
+Model complexity has obvious implications for research transparency (and, by extension, reproducibility)
+  + ML algorithms may lend themselves to PAPs (see, [Augmented PAPs](#whereML5)) ..
+  + .. but **actual practice is a complicated social equilibrium** (incentivization, social norms, tipping points, etc.) with large universe of potential choices
+
+Potential solution: **Graphical representations**, such as DAGs (Pearl, 1995)
+  + Encoding causal assumptions
+  + Testability detection
+    
+- Literature: e.g. [Dacrema et al., 2019](https://arxiv.org/abs/1907.06902); [Dodge et al., 2019](https://arxiv.org/abs/1909.03004); [McDermott et al., 2019](https://arxiv.org/abs/1907.01463); [Mitchell et al., 2019](https://arxiv.org/abs/1810.03993).
+
+
+---
+
+name: caveats5
+
+# V. What Caveats Apply?
+
+## E) Model Robustness or Adaptability
+
+### Problem
+    
+External validity and out-of-sample prediction
+1. Performance under changed environmental conditions
+2. Adversarial attacks (e.g., ~missing values)
+
+### Solutions
+    
+* Life-long maschine learning
+* Transfer learning
+* Domain adaptation
+
+* Literature: e.g., [Chen and Liu (2016)](https://www.cs.uic.edu/~liub/lifelong-machine-learning.html), [Shu and Zhu (2019)](https://arxiv.org/abs/1901.07152), [Bhagoji et al. (2017)](https://arxiv.org/abs/1704.02654)
+
+---
+
+name: caveats6
+
+# V. What Caveats Apply
+
+## F) Causality
+
+### Selection-on-observables assumption 
+
+Many ML papers are weak on the identification side
+  + **Strong ignorability assumption**
+  + Only difference: Optimized prediction drawing on the universe of covariates
+
+### Selective Labels for the Tested
+
+Many big data sets represent a non-representative universe
+  + Threat of **selection** or **collider bias**
+  + Example: Arrested offenders (in dataset) may be different from non-arrested offenders (not in dataset) with respect to the outcome in question
+
+
+---
+
+name: conclusion
+
+# Conclusion
+
+&lt;br/&gt;
+* ML toolkit very helpful in **prediction tasks**
+  + May or may not outcompete simpler models (see, Predicting Firm Performance)
+
+* ML toolkit **does not replace identification strategy** for causal inference tasks
+
+* Economists can best harness ML toolkit in **$\hat{y}$ problems** (but most our problems are `\(\hat{\beta}\)` problems)
+
+* **Model opaqueness** is an issue for de-bugging, transparency, and reproducibility
+
+* Big data behind ML may come with **selection issues** (see, Selective Labels)
+
+* Big data comes with **ethical issues**
+
+* ML toolkit and big data can be **complements to survey research**
+
+
+---
+
+name: lit
+
+# Useful Literature
+
+### General Literature
+* [Mullainathan and Spiess (2017)](https://www.aeaweb.org/articles?id=10.1257/jep.31.2.87) [(UNGATED)](https://scholar.harvard.edu/spiess/publications/machine-learning-applied-econometric-approach)
+* [Athey and Imbens (ARE 2019)](https://www.annualreviews.org/doi/full/10.1146/annurev-economics-080217-053433) [(UNGATED)](https://arxiv.org/abs/1903.10075)
+* [Varian (2014)](https://www.aeaweb.org/articles?id=10.1257/jep.28.2.3) [(UNGATED)](http://people.ischool.berkeley.edu/~hal/Papers/2013/ml.pdf)
+* [James et al. (2017)](http://faculty.marshall.usc.edu/gareth-james/ISL/book.html) (FREE BOOK!)
+* [Hastie, Tibshirani, and Friedman (2017)](https://web.stanford.edu/~hastie/ElemStatLearn/) (FREE BOOK!)
+
+### Causal Inference
+* [Athey and Imbens (JEL 2017)](https://arxiv.org/pdf/1607.00699.pdf) [(UNGATED)](https://ideas.repec.org/a/aea/jecper/v31y2017i2p3-32.html)
+
+### Text Analysis
+* [Gentzkow, Kelly, and Taddy (JEL 2019)](https://www.aeaweb.org/articles?id=10.1257/jel.20181020) [(UNGATED)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2934001)
+
+
+---
+
+name: extras1
+
+# Additional Slides
+
+## Minimizing Statistical Loss
+
+Minimize empirical risk over space of functions (e.g., linear function, quadratic loss, neural networks, etc.):
+
+`\begin{equation}
+f ^ {*} = \arg \min_{f \in \mathcal {H}} \frac {1} {n} \sum L \left( f \left( x_{i} \right) , y_{i} \right)
+\label{minloss}
+\end{equation}`
+
+Practical steps:
+1. Choose type of loss function, e.g. quadratic `\(\left( f \left( x_{i} \right) - y_{i} \right) ^ {2}\)`
+1. Choose starting point
+1. Use Stochastic Gradient Descent to find minimum in iterative process
+
+
+---
+
+name: extras1a
+
+# Additional Slides
+
+
+&lt;img src="Intro-ML_files/figure-html/unnamed-chunk-15-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+name: extras2
+
+# Additional Slides
+
+## `\(k\)`-fold Cross-validation
+
+&lt;br/&gt;
+
+1. Split data into `\(k\)` sub-samples ("folds")
+1. Repeatedly fit model `\(\eta\)` on all but current fold
+1. Obtain fitted values of `\(y_{i}\)` for current fold
+  + Iteratively cycle through all folds to obtain outcome index of fitted values of `\(y_{i}\)` for all observations
+  
+  [Back to cross-validation slide](#whatMLB2)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
