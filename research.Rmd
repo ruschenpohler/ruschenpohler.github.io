@@ -11,7 +11,7 @@
 
 with [Patricio S. Dalton](https://sites.google.com/site/psdalton/), [Burak Uras](https://sites.google.com/site/burakruras/), and [Bilal Zia](https://sites.google.com/site/decbilalzia/home)
 
-Accepted at *Journal of the European Economic Association*
+*Journal of the European Economic Association (preprint, February 2021)*
 
 <details>
 <summary>**Abstract**</summary>
@@ -34,7 +34,7 @@ Accepted at *Journal of the European Economic Association*
 
 with [Patricio S. Dalton](https://sites.google.com/site/psdalton/) and Nhung Nguyen
 
-*Journal of Economic Psychology, 79, August 2020*
+*Journal of Economic Psychology, Vol. 79, August 2020*
 
 
 <details>
@@ -95,15 +95,23 @@ with [Ketki Sheth (UC Merced)](http://ketkisheth.weebly.com) and [Angela Owusu-A
 
 <br>
 
-__Impact Evaluation of Legal and Justice Reforms in the Philippines__
+<!-- __Impact Evaluation of Legal and Justice Reforms in the Philippines__ -->
 
-with [Bilal Siddiqi (UC Berkeley)](http://bilalsiddiqi.com/)
+<!-- with [Bilal Siddiqi (UC Berkeley)](http://bilalsiddiqi.com/) -->
+
+<!-- <br> -->
+
+<!-- __Estimating Long-term Impacts from Short-term Data__ -->
+
+<!-- with [E. Miguel (UC %Berkeley)](http://emiguel.econ.berkeley.edu/), [M. Walker (UC %Berkeley)](http://www.michaelwwalker.me/) -->
+
+__Providing Access to Urban Markets for Agricultural SMEs in Indonesia__
 
 <br>
 
-__Estimating Long-term Impacts from Short-term Data__
+__Weighting for the Call: Addressing Missing Data in Phone Surveys__
 
-with [E. Miguel (UC Berkeley)](http://emiguel.econ.berkeley.edu/), [M. Walker (UC Berkeley)](http://www.michaelwwalker.me/)
+with U. Pape, A. Delius (World Bank), M. Heemann (U Goettingen)
 
 
 
