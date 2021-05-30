@@ -9,7 +9,22 @@
 
 **U.C. Berkeley**
 
-* <a href="files/aspTheory.html" target="_blank">Presentation on Aspirations Theory</a>
+* [Lec] International Economic Development Policy
+  + For Postgraduates in Public Policy and Agricultural Economics
+  + Sessions on Credit Markets, Microcredit, and Firms  
+
+<br>
+
+* [WS] <a href="https://cega.berkeley.edu/initiative/diwa/" target="_blank">DIWA Impact Evaluation Training</a>
+  + For Researchers and Policy Makers from West Africa (Participants of DIWA) 
+  
+<br>
+
+* [WS] Machine Learning for Development Economics
+
+<br>
+
+* [WS] <a href="files/aspTheory.html" target="_blank">Tutorial on Aspirations Theory</a>
 
 
 
@@ -18,13 +33,13 @@
 **Tilburg University**
 
 * [TA] Advancing Society: Markets, Games, & Behavior (Behavioral Econ; 2018)
+  + For Undergraduates in Business
 
-* Introduction to Development Economics (2017, 2018)
-  + For Economics and for Business students
+<br>
 
-<p>
-
-* Econometrics Lab (Data preparation, visualisation, and analysis in Stata)
+* [TA & Lec] Introduction to Development Economics (2017, 2018)
+  + For Undergraduates in Economics and Business
+  + [Lec] Econometrics Lab (Data preparation and analysis in Stata)
 
 <br>
 
@@ -42,11 +57,7 @@
 
 **Tilburg University**
 
-* Jinglin Zhong (B.Sc., 2018)               
-
-* Nat Nawawongwiwat (B.Sc., 2018)
-
-* Robin Aarts (B.Sc., 2017)
+* 4x Bachelor theses (Economics and Social Science)
 
 
 
