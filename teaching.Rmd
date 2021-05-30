@@ -20,11 +20,11 @@
   
 <br>
 
-* [WS] Machine Learning for Development Economics
+* [WS] Machine Learning for Development Economics (<a href="files/Intro-ML.html" target="_blank">Introductory Slides</a>)
 
 <br>
 
-* [WS] <a href="files/aspTheory.html" target="_blank">Tutorial on Aspirations Theory</a>
+* [WS] Short tutorial on Aspirations Theory (<a href="files/aspTheory.html" target="_blank">Slides</a>)
 
 
 
@@ -57,7 +57,7 @@
 
 **Tilburg University**
 
-* 4x Bachelor theses (Economics and Social Science)
+* Undergraduate Theses in Economics and Social Science
 
 
 
