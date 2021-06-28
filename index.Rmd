@@ -24,12 +24,12 @@ A recent version of my **CV** is available <a href="files/Rueschenpoehler_CV_May
 
 <p>
 
-I am interested in understanding how individuals' social environments shape their economic decisions. In recent work, I study how individuals react to and interact with public policy, and how such insights can be incorporated into policy design. I primarily use field experiments to examine the role of local knowledge, social learning, and the effects and evolution of social norms in settings marked by resource constraints.
+I am interested in understanding how individuals' social environments shape their economic decisions. In recent work, I study how individuals react to and interact with public policy, and how such insights can be incorporated into policy design. I primarily use field experiments to examine the role of local knowledge, social learning, and the effects and evolution of social norms.  
 
 
 **Primary Interests**  
-Development Economics  
 Behavioral Economics and Psychology
+Development Economics  
 
 **Secondary Interests**  
 Experimental Economics  
