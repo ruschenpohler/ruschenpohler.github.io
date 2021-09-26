@@ -12,7 +12,7 @@
 
 <p>
 
-I am currently a consultant for **The World Bank** on projects within the Poverty and Equity Team and the Gender Innovation Lab. I am also a Global Priorities Fellow at the Forethought Foundation.
+I am currently a consultant for **The World Bank** on projects within the Poverty and Equity Team and the Gender Innovation Lab. I am also a **Global Priorities Fellow 2021/2022** at the Forethought Foundation in collaboration with the Global Priorities Institute at Oxford University.
 
 I hold a Ph.D. in Economics from **Tilburg University**, and have until recently been a postdoctoral researcher at the **University of California, Berkeley** (at the Center for Effective Global Action, **CEGA**).
 
@@ -24,12 +24,12 @@ A recent version of my **CV** is available <a href="files/Rueschenpoehler_CV_Jul
 
 <p>
 
-I study how individuals' social environments shape their economic decisions. Specifically, I am interested in individuals' interactions with public policy. I primarily use field experiments to investigate the role of social norms, beliefs, and identity with the aim to foster local governance and to inform sustainable development policy.
+I study how individuals' social environments shape their economic decisions. Specifically, I am interested in how individuals interact with public policy and in how such insights may usefully inform policy making. I primarily use field experiments to investigate the role of social norms, belief formation, and identity.
 
 
 **Primary Interests**  
-Behavioral Economics and Psychology  
 Development Economics  
+Behavioral Economics and Psychology  
 
 **Secondary Interests**  
 Experimental Economics  
