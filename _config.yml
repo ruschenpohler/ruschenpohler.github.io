@@ -19,11 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Julius Ruschenpohler
-email: ruschenpohler@berkeley.edu
-description: Postdoc at UC Berkeley, CEGA. Ph.D. in Economics from Tilburg University, working at the intersection of development and behavioral economics. Interested in causal inference and machine learning.
+email: rueschenpoehler@gmail.com
+description: Postdoc at GPRL, Northwestern
 baseurl: "/about" # the subpath of your site, e.g. /blog
 url: "https://ruschenpohler.github.io"
-twitter_username: ruschenpohler
+twitter_username: rueschenpoehler
 github_username:  ruschenpohler
 
 # Build settings
