@@ -24,29 +24,10 @@ A recent version of my **CV** is available <a href="files/Rueschenpoehler_CV_Jan
 
 <p>
 
-I study how individuals' social environments shape their economic decisions. Specifically, I am interested in how individuals interact with public policy and in how such insights may usefully inform policy making. I primarily use field experiments to investigate the role of social norms, belief formation, and identity.
+I am the founding director of the Evidence to Policy Research Initiative (EPRI) at Northwestern with faculty lead Dean Karlan. At EPRI, we take interest in how research evidence is adopted and used in policy-making.
 
-
-**Primary Interests**  
-Development Economics  
-Behavioral Economics and Psychology  
-
-**Secondary Interests**  
-Experimental Economics  
-Applied Econometrics
+Central to this mission is the creation of a meta-database of research findings in international development for policy-makers, researchers, impact investors, journalists, and anyone interested in positive social impact. Alongside, we create tools that allow for easier high-quality evidence synthesis and knowledge management using machine learning and process automation. This workflow facilitates the use of meta-analyses to aggregate quantitative research findings, such as in the space of financial inclusion (see, e.g., [our cash meta-analysis](https://www.nber.org/papers/w32779))
 
 <br>
 
-
-### Contact
-
-<p>
-
-**Email**  
-rueschenpoehler(at)gmail(dot)com
-
-<p>
-
-**Phone**  
-+(thirty-one) 6 20 333 744  
-           +(sixty-two) 811 1087 906
+Feel free to get in touch via [email](mailto:rueschenpoehler@gmail.com)!
