@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-<img src="pics/JRUE_portrait2.jpg" style="width:40%; border:0px solid; margin-left: 15px; margin-right: 40px; margin-top: 30px; " align="right">
+<img src="pics/JRUE_GPRL2024_formal5.jpg" style="width:40%; border:0px solid; margin-left: 15px; margin-right: 40px; margin-top: 30px; " align="right">
 
 <br>
 
@@ -12,11 +12,11 @@
 
 <p>
 
-I am a **Global Priorities Fellow 2021/2022** at the Forethought Foundation in collaboration with the Global Priorities Institute at Oxford University.
+I am a postdoctoral fellow at the Global Poverty Research Lab (**GPRL**) at the Kellogg School of Management, **Northwestern University**. I am interested in the evidence-to-policy nexus, evidence aggregation, causal inference, and inclusive finance.
 
-I hold a Ph.D. in Economics from **Tilburg University**, and have until recently been a postdoctoral researcher at the **University of California, Berkeley** (at the Center for Effective Global Action, **CEGA**).
+I hold a Ph.D. in Economics from Tilburg University. Prior to joining Northwestern, I was a research fellow at the Center for Effective Global Action (CEGA) at University of California, Berkeley.
 
-A recent version of my **CV** is available <a href="files/Rueschenpoehler_CV_July2021.pdf" target="_blank">here</a>.
+A recent version of my **CV** is available <a href="files/Rueschenpoehler_CV_Jan2025.pdf" target="_blank">here</a>.
 
 <br>
 

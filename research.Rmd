@@ -7,9 +7,9 @@
 
 <br>
 
-[Curating Local Knowledge: Experimental Evidence from Small Retailers in Indonesia](https://academic.oup.com/jeea/advance-article/doi/10.1093/jeea/jvab007/6134759)
+[__Curating Local Knowledge: Experimental Evidence from Small Retailers in Indonesia__](https://academic.oup.com/jeea/advance-article/doi/10.1093/jeea/jvab007/6134759)
 
-with [*Patricio S. Dalton*](https://sites.google.com/site/psdalton), [*Burak Uras*](https://sites.google.com/site/burakruras), and [*Bilal Zia*](https://sites.google.com/site/decbilalzia)
+with [Patricio S. Dalton](https://sites.google.com/site/psdalton), [Burak Uras](https://sites.google.com/site/burakruras), and [Bilal Zia](https://sites.google.com/site/decbilalzia)
 
 **Journal of the European Economic Association, Volume 19, Issue 5, October 2021**
 
@@ -28,9 +28,9 @@ with [*Patricio S. Dalton*](https://sites.google.com/site/psdalton), [*Burak Ura
 
 <br>
 
-[Worries of the Poor: The Impact of Financial Burden on the Risk Attitudes of Micro-entrepreneurs](https://www.sciencedirect.com/science/article/pii/S016748701830727X)
+[__Worries of the Poor: The Impact of Financial Burden on the Risk Attitudes of Micro-entrepreneurs__](https://www.sciencedirect.com/science/article/pii/S016748701830727X)
 
-with [*Patricio S. Dalton*](https://sites.google.com/site/psdalton/) and *Nhung Nguyen*
+with [Patricio S. Dalton](https://sites.google.com/site/psdalton/) and Nhung Nguyen
 
 **Journal of Economic Psychology, Volume 79, August 2020**
 
@@ -56,6 +56,23 @@ with [*Patricio S. Dalton*](https://sites.google.com/site/psdalton/) and *Nhung 
 
 <br>
 
+[__Unconditional Cash Transfers: A Bayesian Meta-Analysis of Randomized Evaluations in Low and Middle Income Countries__](https://www.nber.org/papers/w32779)
+
+with [Tommaso Crosta](https://tommaso11397.github.io/Personal-Website/), [Dean Karlan](http://deankarlan.com/), [Finley Ong](https://www.linkedin.com/in/finley-ong-2818b617a/), and [Chris Udry](https://sites.northwestern.edu/christopherudry/)
+
+*NBER Working Paper*
+
+<details>
+<summary>**Abstract**</summary>
+
+> <sub>We use Bayesian meta-analysis methods to estimate the impact of unconditional cash transfers (UCTs) on twelve primary outcomes from 114 studies of 72 UCT programs in middle and low income countries. Cash transfers generate strong and positive average treatment effects on ten of thirteen outcomes: monthly household total and food consumption, monthly income, labor supply, school enrollment, food security, psychological well-being, total assets, financial assets, and children height-for-age. The three remaining outcomes have prediction intervals mostly positive, but that include zero: number of hours worked, children weight-for-age, and stunting. We draw six conclusions: First, consistent with several models of capital market failures, households consume more of streams and invest more of lump sums, however once stream programs end the impacts mirror those of lump sum, indicating some propensity to save a portion of stream transfers. Second, long-run treatment effects remain broadly strong, with some evidence of lump sums modestly dissipating impact while ongoing streams augmenting impact. Third, returns are linear or slightly negative with respect to grant amount, thus we do not find evidence for threshold-based poverty traps within the observed range of transfers and with this study-level analytical method. Fourth, effects on consumption and income are greater for UCTs targeted to women. Fifth, programs employing light-touch framing related to child welfare or food security have weakly stronger impacts. Sixth, positive impacts on labor supply and income suggest no evidence of “dependency” theories that cash transfers demotivate income-generating activity on average.</sub>
+
+</details>
+
+<p>
+
+<br>
+
 
 [__Determinants and Dynamics of Business Aspirations: Evidence from Small-scale Entrepreneurs in an Emerging Market__](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3128196)
 
@@ -73,29 +90,6 @@ with [Patricio S. Dalton](https://sites.google.com/site/psdalton/research) and [
 <p>
 
 <sup> **Coverage**: [Let's Talk Development](http://blogs.worldbank.org/developmenttalk/what-are-business-aspirations-worth-developing-countries)
-
-<br>
-<br>
-
-
-
-### Selected Work in Progress
-
-<br>
-
-__DEVIDENCE: A comprehensive meta-database of experimental evidence in international development__ with [Dean Karlan (Northwestern)](http://deankarlan.com/)
-
-<br>
-
-__Policy-makers' mental models of impact__ with [Ricardo Dahis (PUC Rio)](https://www.ricardodahis.com/)
-
-<br>
-
-__Learning new health risks: Climate change adaptation in Nairobi__ with [Nathaniel Peterson (Busara)]
-
-
-
-
 
 
 

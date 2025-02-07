@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>research.utf8.md</title>
+<title>research.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -44,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -80,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -100,40 +85,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -161,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -173,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,11 +144,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -199,13 +177,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -213,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -235,6 +205,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -265,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -320,7 +291,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -332,60 +303,178 @@ $(document).ready(function () {
 <div id="publications" class="section level3">
 <h3>Publications</h3>
 <p><br></p>
-<p><a href="https://academic.oup.com/jeea/advance-article/doi/10.1093/jeea/jvab007/6134759">Curating Local Knowledge: Experimental Evidence from Small Retailers in Indonesia</a></p>
-<p>with <a href="https://sites.google.com/site/psdalton"><em>Patricio S. Dalton</em></a>, <a href="https://sites.google.com/site/burakruras"><em>Burak Uras</em></a>, and <a href="https://sites.google.com/site/decbilalzia"><em>Bilal Zia</em></a></p>
-<p><strong>Journal of the European Economic Association, Volume 19, Issue 5, October 2021</strong></p>
+<p><a
+href="https://academic.oup.com/jeea/advance-article/doi/10.1093/jeea/jvab007/6134759"><strong>Curating
+Local Knowledge: Experimental Evidence from Small Retailers in
+Indonesia</strong></a></p>
+<p>with <a href="https://sites.google.com/site/psdalton">Patricio S.
+Dalton</a>, <a href="https://sites.google.com/site/burakruras">Burak
+Uras</a>, and <a href="https://sites.google.com/site/decbilalzia">Bilal
+Zia</a></p>
+<p><strong>Journal of the European Economic Association, Volume 19,
+Issue 5, October 2021</strong></p>
 <details>
-<p><summary>Abstract</summary></p>
+<summary>
+Abstract
+</summary>
 <blockquote>
-<p><sub>Business practices and performance vary widely among local peers. This paper identifies key determinants of such heterogeneity among a sample of small urban retail shops in Indonesia, and experimentally tests whether learning about the best practices of local peers is valuable for business growth. Through extensive baseline quantitative and qualitative fieldwork, the study develops a handbook that associates specific business practices with performance and provides detailed implementation guidance informed by exemplary local shop owners. Instead of offering formal training or in-depth counseling, this handbook is simply distributed to a randomly selected sample of shop owners and complemented with three experiential learning modules: one group is invited to watch a documentary video on experiences of highly successful peers, another is offered light in-shop assistance on the implementation of the hand-book, and a third group is offered both. Eighteen months after the intervention, the study finds no effect of offering the handbook alone, but significant impact on practice adoption when the handbook is coupled with experiential learning. On business performance, the study finds sizable and significant improvements as well, up to an increase of 35 percent in profits and an increase of 16.7 percent in revenues. The types of practices adopted map these performance improvements to efficiency gains rather than other channels. The analysis suggests that these interventions are simple, scalable, and highly cost-effective.</sub></p>
+<p><sub>Business practices and performance vary widely among local
+peers. This paper identifies key determinants of such heterogeneity
+among a sample of small urban retail shops in Indonesia, and
+experimentally tests whether learning about the best practices of local
+peers is valuable for business growth. Through extensive baseline
+quantitative and qualitative fieldwork, the study develops a handbook
+that associates specific business practices with performance and
+provides detailed implementation guidance informed by exemplary local
+shop owners. Instead of offering formal training or in-depth counseling,
+this handbook is simply distributed to a randomly selected sample of
+shop owners and complemented with three experiential learning modules:
+one group is invited to watch a documentary video on experiences of
+highly successful peers, another is offered light in-shop assistance on
+the implementation of the hand-book, and a third group is offered both.
+Eighteen months after the intervention, the study finds no effect of
+offering the handbook alone, but significant impact on practice adoption
+when the handbook is coupled with experiential learning. On business
+performance, the study finds sizable and significant improvements as
+well, up to an increase of 35 percent in profits and an increase of 16.7
+percent in revenues. The types of practices adopted map these
+performance improvements to efficiency gains rather than other channels.
+The analysis suggests that these interventions are simple, scalable, and
+highly cost-effective.</sub></p>
 </blockquote>
 </details>
 <p>
-<p><sup> Material: <a href="https://www.youtube.com/watch?v=7kNz0k7-y4E&amp;feature=youtu.be">Documentary of successful peers</a>, <a href="files/LearningFromPeers_Handbook.pdf" class="image fit">Handbook of local best practices</a></p>
-<p><sup> Coverage: <a href="https://voxdev.org/lits/training-entrepreneurs">VoxDevLit</a>, <a href="https://blogs.worldbank.org/impactevaluations/learning-other-firms-entrepreneur-never-meets">Development Impact</a>, <a href="https://www.nesta.org.uk/blog/dont-overlook-local-skills-effective-policies-improve-business-practice/">Nesta</a></p>
+<p><sup> Material: <a
+href="https://www.youtube.com/watch?v=7kNz0k7-y4E&amp;feature=youtu.be">Documentary
+of successful peers</a>,
+<a href="files/LearningFromPeers_Handbook.pdf" class="image fit">Handbook
+of local best practices</a></p>
+<p><sup> Coverage: <a
+href="https://voxdev.org/lits/training-entrepreneurs">VoxDevLit</a>, <a
+href="https://blogs.worldbank.org/impactevaluations/learning-other-firms-entrepreneur-never-meets">Development
+Impact</a>, <a
+href="https://www.nesta.org.uk/blog/dont-overlook-local-skills-effective-policies-improve-business-practice/">Nesta</a></p>
 <p><br></p>
-<p><a href="https://www.sciencedirect.com/science/article/pii/S016748701830727X">Worries of the Poor: The Impact of Financial Burden on the Risk Attitudes of Micro-entrepreneurs</a></p>
-<p>with <a href="https://sites.google.com/site/psdalton/"><em>Patricio S. Dalton</em></a> and <em>Nhung Nguyen</em></p>
-<p><strong>Journal of Economic Psychology, Volume 79, August 2020</strong></p>
+<p><a
+href="https://www.sciencedirect.com/science/article/pii/S016748701830727X"><strong>Worries
+of the Poor: The Impact of Financial Burden on the Risk Attitudes of
+Micro-entrepreneurs</strong></a></p>
+<p>with <a href="https://sites.google.com/site/psdalton/">Patricio S.
+Dalton</a> and Nhung Nguyen</p>
+<p><strong>Journal of Economic Psychology, Volume 79, August
+2020</strong></p>
 <details>
-<p><summary>Abstract</summary></p>
+<summary>
+Abstract
+</summary>
 <blockquote>
-<p><sub>We randomly expose the owners of small retail businesses in Vietnam to scenarios that trigger financial worries and study the effect of this intervention on risk attitudes. Using an incentive-compatible investment game, we ﬁnd that entrepreneurs exposed to financial worries are more likely to seek ﬁnancial risks than those assigned to a placebo treatment. In line with psychological theory on the effect of affective states and stress on risk-taking behavior, this effect is stronger for owners of shops which are smaller and less exposed to large income shocks in their everyday business. We further show that the effect of financial worries on risk attitudes is not explained by changes in the cognitive functioning of the treated. The findings point to the crucial role of financial worries in economic decision-making under poverty.</sub></p>
+<p><sub>We randomly expose the owners of small retail businesses in
+Vietnam to scenarios that trigger financial worries and study the effect
+of this intervention on risk attitudes. Using an incentive-compatible
+investment game, we ﬁnd that entrepreneurs exposed to financial worries
+are more likely to seek ﬁnancial risks than those assigned to a placebo
+treatment. In line with psychological theory on the effect of affective
+states and stress on risk-taking behavior, this effect is stronger for
+owners of shops which are smaller and less exposed to large income
+shocks in their everyday business. We further show that the effect of
+financial worries on risk attitudes is not explained by changes in the
+cognitive functioning of the treated. The findings point to the crucial
+role of financial worries in economic decision-making under
+poverty.</sub></p>
 </blockquote>
 </details>
 <p>
-<p><sup> Material: <a href="https://www.sciencedirect.com/science/article/pii/S016748701830727X#ec-research-data">Replication file and data</a></p>
+<p><sup> Material: <a
+href="https://www.sciencedirect.com/science/article/pii/S016748701830727X#ec-research-data">Replication
+file and data</a></p>
 <p><br> <br></p>
 </div>
 <div id="working-papers" class="section level3">
 <h3>Working Papers</h3>
 <p><br></p>
-<p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3128196"><strong>Determinants and Dynamics of Business Aspirations: Evidence from Small-scale Entrepreneurs in an Emerging Market</strong></a></p>
-<p>with <a href="https://sites.google.com/site/psdalton/research">Patricio S. Dalton</a> and <a href="https://sites.google.com/site/decbilalzia/home">Bilal Zia</a></p>
-<p><em>SSRN Working Paper</em></p>
+<p><a href="https://www.nber.org/papers/w32779"><strong>Unconditional
+Cash Transfers: A Bayesian Meta-Analysis of Randomized Evaluations in
+Low and Middle Income Countries</strong></a></p>
+<p>with <a
+href="https://tommaso11397.github.io/Personal-Website/">Tommaso
+Crosta</a>, <a href="http://deankarlan.com/">Dean Karlan</a>, <a
+href="https://www.linkedin.com/in/finley-ong-2818b617a/">Finley Ong</a>,
+and <a href="https://sites.northwestern.edu/christopherudry/">Chris
+Udry</a></p>
+<p><em>NBER Working Paper</em></p>
 <details>
-<p><summary><strong>Abstract</strong></summary></p>
+<summary>
+<strong>Abstract</strong>
+</summary>
 <blockquote>
-<p><sub>Small-scale entrepreneurs are ubiquitous in emerging market economies, yet very few graduate to become larger businesses. We ask whether such entrepreneurs even aspire to grow, and if so, on which dimensions of the business? What factors inﬂuence these aspirations, how realistic are they, and do entrepreneurs dynamically update them based on realized outcomes? Using a unique panel data set of small-scale retailers in Indonesia, we show that the average business has strong short- and long-term aspirations for growth in shop size, number of employees, number of customers, and sales. Yet, more than half of the businesses report no aspirations for growth in the next 12 months, and 16 percent fail to imagine an ideal business over the long-term. Entrepreneurs with low proﬁts, business skills, and agency beliefs, as well as those who are older, female, and less educated have significantly lower aspirations. Analysis from a year later shows that most entrepreneurs fail to set realistic aspirations at baseline, but significantly adjust their aspirations to realistic levels with realized outcomes. The analysis also shows baseline aspirations are a strong predictor of measures of business expansion and innovation, as well as performance outcomes a year later.</sub></p>
+<p><sub>We use Bayesian meta-analysis methods to estimate the impact of
+unconditional cash transfers (UCTs) on twelve primary outcomes from 114
+studies of 72 UCT programs in middle and low income countries. Cash
+transfers generate strong and positive average treatment effects on ten
+of thirteen outcomes: monthly household total and food consumption,
+monthly income, labor supply, school enrollment, food security,
+psychological well-being, total assets, financial assets, and children
+height-for-age. The three remaining outcomes have prediction intervals
+mostly positive, but that include zero: number of hours worked, children
+weight-for-age, and stunting. We draw six conclusions: First, consistent
+with several models of capital market failures, households consume more
+of streams and invest more of lump sums, however once stream programs
+end the impacts mirror those of lump sum, indicating some propensity to
+save a portion of stream transfers. Second, long-run treatment effects
+remain broadly strong, with some evidence of lump sums modestly
+dissipating impact while ongoing streams augmenting impact. Third,
+returns are linear or slightly negative with respect to grant amount,
+thus we do not find evidence for threshold-based poverty traps within
+the observed range of transfers and with this study-level analytical
+method. Fourth, effects on consumption and income are greater for UCTs
+targeted to women. Fifth, programs employing light-touch framing related
+to child welfare or food security have weakly stronger impacts. Sixth,
+positive impacts on labor supply and income suggest no evidence of
+“dependency” theories that cash transfers demotivate income-generating
+activity on average.</sub></p>
 </blockquote>
 </details>
 <p>
-<p><sup> <strong>Coverage</strong>: <a href="http://blogs.worldbank.org/developmenttalk/what-are-business-aspirations-worth-developing-countries">Let’s Talk Development</a></p>
-<p><br> <br></p>
-</div>
-<div id="selected-work-in-progress" class="section level3">
-<h3>Selected Work in Progress</h3>
 <p><br></p>
-<p><strong>The Role of Social Norms in Community Participation for School Accountability in Ghana</strong></p>
-<p>with <a href="http://ketkisheth.weebly.com">Ketki Sheth (UC Merced)</a> and <a href="https://www.ashesi.edu.gh/academics/faculty/3198-angela-owusu-ansah-phd.html">Angela Owusu-Ansah (Ashesi)</a></p>
-<p><br></p>
-<!-- __Impact Evaluation of Legal and Justice Reforms in the Philippines__ -->
-<!-- with [Bilal Siddiqi (UC Berkeley)](http://bilalsiddiqi.com/) -->
-<!-- <br> -->
-<!-- __Estimating Long-term Impacts from Short-term Data__ -->
-<!-- with [E. Miguel (UC %Berkeley)](http://emiguel.econ.berkeley.edu/), [M. Walker (UC %Berkeley)](http://www.michaelwwalker.me/) -->
-<p><strong>Providing Access to Urban Markets for Agricultural SMEs in Indonesia</strong></p>
+<p><a
+href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3128196"><strong>Determinants
+and Dynamics of Business Aspirations: Evidence from Small-scale
+Entrepreneurs in an Emerging Market</strong></a></p>
+<p>with <a
+href="https://sites.google.com/site/psdalton/research">Patricio S.
+Dalton</a> and <a
+href="https://sites.google.com/site/decbilalzia/home">Bilal Zia</a></p>
+<p><em>SSRN Working Paper</em></p>
+<details>
+<summary>
+<strong>Abstract</strong>
+</summary>
+<blockquote>
+<p><sub>Small-scale entrepreneurs are ubiquitous in emerging market
+economies, yet very few graduate to become larger businesses. We ask
+whether such entrepreneurs even aspire to grow, and if so, on which
+dimensions of the business? What factors inﬂuence these aspirations, how
+realistic are they, and do entrepreneurs dynamically update them based
+on realized outcomes? Using a unique panel data set of small-scale
+retailers in Indonesia, we show that the average business has strong
+short- and long-term aspirations for growth in shop size, number of
+employees, number of customers, and sales. Yet, more than half of the
+businesses report no aspirations for growth in the next 12 months, and
+16 percent fail to imagine an ideal business over the long-term.
+Entrepreneurs with low proﬁts, business skills, and agency beliefs, as
+well as those who are older, female, and less educated have
+significantly lower aspirations. Analysis from a year later shows that
+most entrepreneurs fail to set realistic aspirations at baseline, but
+significantly adjust their aspirations to realistic levels with realized
+outcomes. The analysis also shows baseline aspirations are a strong
+predictor of measures of business expansion and innovation, as well as
+performance outcomes a year later.</sub></p>
+</blockquote>
+</details>
+<p>
+<p><sup> <strong>Coverage</strong>: <a
+href="http://blogs.worldbank.org/developmenttalk/what-are-business-aspirations-worth-developing-countries">Let’s
+Talk Development</a></p>
 </div>
 
 
@@ -397,7 +486,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -415,7 +504,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
