@@ -12,7 +12,7 @@
 
 <p>
 
-I am a postdoctoral fellow at the Global Poverty Research Lab (**GPRL**) at the Kellogg School of Management, **Northwestern University**. I am interested in the evidence-to-policy nexus, evidence aggregation, causal inference, and inclusive finance.
+I am a postdoctoral fellow at the Global Poverty Research Lab (**GPRL**) at the Kellogg School of Management, **Northwestern University**. I am interested in the evidence-to-policy nexus, evidence aggregation, and inclusive finance.
 
 I hold a Ph.D. in Economics from Tilburg University. Prior to joining Northwestern, I was a research fellow at the Center for Effective Global Action (CEGA) at University of California, Berkeley.
 
@@ -26,7 +26,7 @@ A recent version of my **CV** is available <a href="files/Rueschenpoehler_CV_Jan
 
 I am the founding director of the Evidence to Policy Research Initiative (EPRI) at Northwestern with faculty lead Dean Karlan. At EPRI, we take interest in how research evidence is adopted and used in policy-making.
 
-Central to this mission is the creation of a meta-database of research findings in international development for policy-makers, researchers, impact investors, journalists, and anyone interested in positive social impact. Alongside, we create tools that allow for easier high-quality evidence synthesis and knowledge management using machine learning and process automation. This workflow facilitates the use of meta-analyses to aggregate quantitative research findings, such as in the space of financial inclusion (see, e.g., [our cash meta-analysis](https://www.nber.org/papers/w32779))
+Central to our mission is the creation of a meta-database of research findings in international development for policy-makers, researchers, impact investors, journalists, and anyone interested in positive social impact. Alongside, we create tools that allow for easier high-quality evidence synthesis and knowledge management using machine learning and process automation. This workflow facilitates the creation of meta-analyses to aggregate quantitative research findings for a policy and research audience, such as [our meta-analysis on unconditional cash transfers](https://www.nber.org/papers/w32779).
 
 <br>
 
