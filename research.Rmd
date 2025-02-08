@@ -11,7 +11,7 @@
 
 with [Patricio S. Dalton](https://sites.google.com/site/psdalton), [Burak Uras](https://sites.google.com/site/burakruras), and [Bilal Zia](https://sites.google.com/site/decbilalzia)
 
-**Journal of the European Economic Association, Volume 19, Issue 5, October 2021**
+**Journal of the European Economic Association, 19(5), 2622–2657**
 
 <details>
 <summary>Abstract</summary>
@@ -24,7 +24,7 @@ with [Patricio S. Dalton](https://sites.google.com/site/psdalton), [Burak Uras](
 
 <sup> Material: [Documentary of successful peers](https://www.youtube.com/watch?v=7kNz0k7-y4E&feature=youtu.be), <a href="files/LearningFromPeers_Handbook.pdf" class="image fit">Handbook of local best practices</a>
 
-<sup> Coverage: [VoxDevLit](https://voxdev.org/lits/training-entrepreneurs), [Development Impact](https://blogs.worldbank.org/impactevaluations/learning-other-firms-entrepreneur-never-meets), [Nesta](https://www.nesta.org.uk/blog/dont-overlook-local-skills-effective-policies-improve-business-practice/)
+<sup> Coverage: [VoxDevLit](https://voxdev.org/voxdevlit/training-entrepreneurs), [Development Impact](https://blogs.worldbank.org/impactevaluations/learning-other-firms-entrepreneur-never-meets), [Nesta](https://www.nesta.org.uk/blog/dont-overlook-local-skills-effective-policies-improve-business-practice/)
 
 <br>
 
@@ -32,7 +32,7 @@ with [Patricio S. Dalton](https://sites.google.com/site/psdalton), [Burak Uras](
 
 with [Patricio S. Dalton](https://sites.google.com/site/psdalton/) and Nhung Nguyen
 
-**Journal of Economic Psychology, Volume 79, August 2020**
+**Journal of Economic Psychology, 79, 1-12**
 
 
 <details>
@@ -60,16 +60,19 @@ with [Patricio S. Dalton](https://sites.google.com/site/psdalton/) and Nhung Ngu
 
 with [Tommaso Crosta](https://tommaso11397.github.io/Personal-Website/), [Dean Karlan](http://deankarlan.com/), [Finley Ong](https://www.linkedin.com/in/finley-ong-2818b617a/), and [Chris Udry](https://sites.northwestern.edu/christopherudry/)
 
-*NBER Working Paper*
+**NBER Working Paper**
 
 <details>
-<summary>**Abstract**</summary>
+<summary>Abstract</summary>
 
 > <sub>We use Bayesian meta-analysis methods to estimate the impact of unconditional cash transfers (UCTs) on twelve primary outcomes from 114 studies of 72 UCT programs in middle and low income countries. Cash transfers generate strong and positive average treatment effects on ten of thirteen outcomes: monthly household total and food consumption, monthly income, labor supply, school enrollment, food security, psychological well-being, total assets, financial assets, and children height-for-age. The three remaining outcomes have prediction intervals mostly positive, but that include zero: number of hours worked, children weight-for-age, and stunting. We draw six conclusions: First, consistent with several models of capital market failures, households consume more of streams and invest more of lump sums, however once stream programs end the impacts mirror those of lump sum, indicating some propensity to save a portion of stream transfers. Second, long-run treatment effects remain broadly strong, with some evidence of lump sums modestly dissipating impact while ongoing streams augmenting impact. Third, returns are linear or slightly negative with respect to grant amount, thus we do not find evidence for threshold-based poverty traps within the observed range of transfers and with this study-level analytical method. Fourth, effects on consumption and income are greater for UCTs targeted to women. Fifth, programs employing light-touch framing related to child welfare or food security have weakly stronger impacts. Sixth, positive impacts on labor supply and income suggest no evidence of “dependency” theories that cash transfers demotivate income-generating activity on average.</sub>
 
 </details>
 
 <p>
+
+<sup> **Coverage**: [Twitter](https://x.com/deankarlan/status/1833573919548440855)
+
 
 <br>
 
@@ -78,10 +81,10 @@ with [Tommaso Crosta](https://tommaso11397.github.io/Personal-Website/), [Dean K
 
 with [Patricio S. Dalton](https://sites.google.com/site/psdalton/research) and [Bilal Zia](https://sites.google.com/site/decbilalzia/home)
 
-*SSRN Working Paper*
+**SSRN Working Paper**
 
 <details>
-<summary>**Abstract**</summary>
+<summary>Abstract</summary>
 
 > <sub>Small-scale entrepreneurs are ubiquitous in emerging market economies, yet very few graduate to become larger businesses. We ask whether such entrepreneurs even aspire to grow, and if so, on which dimensions of the business? What factors inﬂuence these aspirations, how realistic are they, and do entrepreneurs dynamically update them based on realized outcomes? Using a unique panel data set of small-scale retailers in Indonesia, we show that the average business has strong short- and long-term aspirations for growth in shop size, number of employees, number of customers, and sales. Yet, more than half of the businesses report no aspirations for growth in the next 12 months, and 16 percent fail to imagine an ideal business over the long-term. Entrepreneurs with low proﬁts, business skills, and agency beliefs, as well as those who are older, female, and less educated have significantly lower aspirations. Analysis from a year later shows that most entrepreneurs fail to set realistic aspirations at baseline, but significantly adjust their aspirations to realistic levels with realized outcomes. The analysis also shows baseline aspirations are a strong predictor of measures of business expansion and innovation, as well as performance outcomes a year later.</sub>
 
