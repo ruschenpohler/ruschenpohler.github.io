@@ -24,7 +24,7 @@ A recent version of my **CV** is available <a href="files/Rueschenpoehler_CV_Jan
 
 <p>
 
-I am the founding director of the Evidence to Policy Research Initiative (EPRI) at Northwestern with faculty lead Dean Karlan. At EPRI, we take interest in how research evidence is adopted and used in policy-making.
+I am the founding director of the Evidence to Policy Research Initiative (EPRI) at Northwestern together with faculty lead Dean Karlan. At EPRI, we take interest in how research evidence is adopted and used in policy-making.
 
 Central to our mission is the creation of a meta-database of research findings in international development for policy-makers, researchers, impact investors, journalists, and anyone interested in positive social impact. Alongside, we create tools that allow for easier high-quality evidence synthesis and knowledge management using machine learning and process automation. This workflow facilitates the creation of meta-analyses to aggregate quantitative research findings for a policy and research audience, such as [our meta-analysis on unconditional cash transfers](https://www.nber.org/papers/w32779).
 
