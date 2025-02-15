@@ -5,4 +5,4 @@
 
 In case the plugin does not build, please find my **CV** <a href="files/Rueschenpoehler_CV_Jan2025.pdf" target="_blank">here</a>.
 
-<embed src="https://ruschenpohler.github.io/files/Rueschenpoehler_CV_July2021.pdf" type="application/pdf" width="900" height="800" />
+<embed src="https://ruschenpohler.github.io/files/Rueschenpoehler_CV_Jan2025.pdf" type="application/pdf" width="900" height="800" />
